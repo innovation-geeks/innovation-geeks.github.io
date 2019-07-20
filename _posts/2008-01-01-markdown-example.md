@@ -1,10 +1,13 @@
 ---
-title: "Markdown Example"
+title: Markdown Example
 date: 2008-01-01 00:00:00 +0800
 categories: [tutorial]
 tags: [markdown]
 comments: true
 toc: true
+sitemap:
+  lastmod: !!binary |
+    MjAxOS0wNy0yMA==
 ---
 
 ## Typograpy

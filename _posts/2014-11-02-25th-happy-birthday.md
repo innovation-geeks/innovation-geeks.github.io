@@ -1,10 +1,13 @@
 ---
-title: "25th Happy Birthday"
+title: 25th Happy Birthday
 date: 2014-11-02 00:00:00 +0800
 categories: [life]
 tags: [life]
 comments: true
 toc: true
+sitemap:
+  lastmod: !!binary |
+    MjAxOS0wNy0yMA==
 ---
 
 时光荏苒，太匆匆。
