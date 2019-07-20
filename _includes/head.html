@@ -1,0 +1,34 @@
+<head>
+  <title>
+    {%- if page.title.en == "Home" -%}
+      {{ site.data.settings.title }}
+    {%- else -%}
+      {%- if site.data.settings.lang == 'zh' and page.title.zh -%}
+        {%- assign title = page.title.zh -%}
+      {%- elsif site.data.settings.lang == 'en' and page.title.en -%}
+        {%- assign title =  page.title.en -%}
+      {%- else -%}
+        {%- assign title = page.title -%}
+      {%- endif -%}
+      {{ title }} | {{ site.data.settings.title }}
+    {%- endif -%}
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="favicon.ico" rel="apple-touch-icon">
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/5.1.0/css/all.css" rel="stylesheet">
+  <link href="/assets/css/styles.css" rel="stylesheet">
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.0.0/js/bootstrap.min.js" async></script>
+  <script src="/assets/js/dist/commons.js" async></script>
+
+  {% if jekyll.environment == 'production' %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  <!-- Use Atom -->
+  {% feed_meta %}
+</head>

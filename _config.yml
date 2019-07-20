@@ -1,1 +1,96 @@
-theme: jekyll-theme-minimal
+# Site Settings
+paginate: 10
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true  # Change it to be 'false', can close the comments of a post separately.
+      toc: true # Display TOC column in posts.
+      location: Post
+      breadcrumb:
+        -
+          label: Posts
+          url: /
+  -
+    scope:
+      path: _drafts
+    values:
+      comments: false
+  -
+    scope:
+      path: tags
+    values:
+      location: Tag
+      breadcrumb:
+        -
+          label: Home
+          url: /
+        -
+          label: Tags
+          url: /tabs/tags/
+  -
+    scope:
+      path: categories
+    values:
+      location: Category
+      breadcrumb:
+        -
+          label: Home
+          url: /
+        -
+          label: Categories
+          url: /tabs/categories/
+  -
+    scope:
+      path: tabs
+    values:
+      dynamic_title: true # hide title in mobile screens.
+      breadcrumb:
+        -
+          label: Home
+          url: /
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+feed:
+  path: rss-feed.xml
+
+timezone: Asia/Shanghai
+
+sass:
+  sass_dir: /assets/css
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: [html, head, body, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+jekyll_timeago:
+  depth: 1
+  default_locale: 'en'
+  fallbacks: true
+
+exclude:
+  - vendor/ # Avoid Jekyll mitankenly read and explode on the Travis vender directory.
+  - Gemfile.lock
+  - Gemfile
+
+blocklist: # Sitemap will ignore directories as below.
+  - /norobots/
+  - /assets/
+  - /tabs/
+  - /categories/
+  - /tags/

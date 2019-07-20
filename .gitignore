@@ -1,0 +1,17 @@
+# python
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# jekyll debug
+_site
+
+# Jeykll Gemfile.lock
+Gemfile.lock
+
+# yui-compressor
+*.jar
+
+.sass-cache/
+
+.idea/

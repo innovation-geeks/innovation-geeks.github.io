@@ -1,0 +1,61 @@
+{% assign DATE_FORMAT = "%b %-d, %Y" %}
+
+<div class="panel-group">
+  <div id="panel-update" class="post mb-4"">
+    {% capture posts %}
+    {% for post in site.posts %}
+      {% assign post_date = post.date | date: DATE_FORMAT %}
+      {% assign post_lastmod = post.last_modified_at | date: DATE_FORMAT %}
+      {% if post_date == post_lastmod %}
+        {% continue %}
+      {% endif%}
+      {{ post.last_modified_at }}#{{ post.title }}#{{ post.url }}
+      {% if forloop.last == false %}|{% endif %}
+    {% endfor %}
+    {% endcapture %}
+
+    <h3 data-toc-skip>Recent Update</h3>
+    <ul class="post-content pl-0 mt-2 pb-1">
+    {% assign MAX_SIZE = 5 %}
+    {% assign sum = 0 %}
+    {% assign sorted_posts = posts | split: "|" | sort | reverse %}
+    {% for post in sorted_posts %}
+      {% assign title = post | split: "#" %}
+      <li><a href="{{ title[2] }}">{{ title[1] }}</a></li>
+      {% assign sum = sum | plus: 1 %}
+      {% if sum >= MAX_SIZE %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div><!-- #panel-update -->
+
+  <div id="panel-tags">
+    <h3 data-toc-skip>Trending Tags</h3>
+    <div class="d-flex flex-wrap mt-2 pb-1 pr-3">
+      {% capture tags_array %}
+        {% for tag in site.tags %}
+          {{ tag[1] | size }}:{{ tag[0] | replace: ' ', '-' }}
+        {% endfor %}
+      {% endcapture %}
+
+      {% assign MAX = 10 %}
+      {% assign count = 0 %}
+      {% assign trends = tags_array | split: " " | sort | reverse %}
+
+      <div>
+      <!-- <p>tags_array->{{ tags_array }}</p> -->
+      {% for trend in trends %}
+        {% assign count = count | plus: 1 %}
+        {% assign tag = trend | split: ":" | last  %}
+        <a class="post-tag" href="/tags/{{ tag | downcase }}/">{{ tag | replace: '-', ' ' }}</a>
+        {% if count >= MAX %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      </div>
+
+    </div>
+  </div><!-- #panel-tags -->
+
+</div>
