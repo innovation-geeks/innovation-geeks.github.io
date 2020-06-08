@@ -1,20 +1,19 @@
 ---
-title: auto-machine-learning-01
+title: machine-learning-feature-engineering
 date: 2020-05-11 21:45:00 +0800
 categories: [machine-learning]
-tags: [sklearn]
+tags: [feature-engineering]
 comments: true
 toc: true
+sitemap:
+  lastmod: !!binary |
+    MjAyMC0wNi0wOA==
 ---
 
 
 # Foreword
 
 在机器学习领域，整个行业朝着准入门槛更低、研发流程更敏捷方向发展，Auto-ML的出现意味着整个流程更加自动化。Auto-ML主要集中在特征工程自动化，模型选择自动化，模型训练及参数优化自动化，数据偏移检测自动化等。以下以python sklearn等模块，示例各个阶段如何进行自动化数据数据。
-
-# Example Data
-
-略。
 
 # Feature Engineering
 
