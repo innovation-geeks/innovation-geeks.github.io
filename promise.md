@@ -11,6 +11,7 @@
 |linux | Linux |
 |java | Java |
 |machine-learning | 机器学习 |
+|data-mining | 数据挖掘 |
 |math | 数学 |
 |nlp | 自然语言处理 |
 |python | Python |

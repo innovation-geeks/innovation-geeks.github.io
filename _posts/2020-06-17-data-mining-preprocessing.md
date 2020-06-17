@@ -204,7 +204,7 @@ transformer.fit_transform(X_train)
 文本分类或聚类中常用。可用于稠密的numpy数组和scipy.sparse矩阵（如果你想避免复制/转换的负担，请使用CSR格式）
 Normalization主要思想是对每个样本计算其p-范数，然后对该样本中每个元素除以该范数，这样处理的结果是使得每个处理后样本的p-范数（L1-norm, L2-norm）等于1。
 
-p-范数的计算公式详见下篇：[P-Norm](/_post/2020-06-17-data-mining-p-norm.md "data-mining-p-norm")
+p-范数的计算公式详见下篇：[P-Norm](/posts/data-mining-p-norm/ "data-mining-p-norm")
 
 ```python
 from sklearn.preprocessing import Normalizer
@@ -333,5 +333,7 @@ Q：进行特征缩放有哪些注意事项？
 	需要先把数据拆分成训练集与验证集，在训练集上计算出需要的数值（如均值和标准值），对训练集数据做标准化/归一化处理（不要在整个数据集上做标准化/归一化处理，因为这样会将验证集的信息带入到训练集中，这是一个非常容易犯的错误），然后再用之前计算出的数据（如均值和标准值）对验证集数据做相同的标准化/归一化处理。
 
 更多例子，请查看：
+
 [预处理数据](https://www.studyai.cn/modules/preprocessing.html "预处理数据")
+
 [Preprocessing data](https://scikit-learn.org/stable/modules/preprocessing.html "Preprocessing data")
