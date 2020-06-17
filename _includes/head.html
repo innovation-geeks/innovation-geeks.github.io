@@ -32,14 +32,15 @@
       < !--$表示行内元素，$$表示块状元素-->
       inlineMath: [['$', '$'], ["\\(", "\\)"]],
       displayMath: [['$$', '$$'], ["\\[", "\\]"]],
-      processEscapes: true
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
     },
     "HTML-CSS": {
       availableFonts: ["TeX"]
     }
   });</script>
   <!--异步加载MathJax的最新版本-->
-  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   {% if jekyll.environment == 'production' %}
     {% include google-analytics.html %}

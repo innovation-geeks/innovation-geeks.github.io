@@ -25,7 +25,7 @@ sitemap:
       }
     });</script>
   <!--异步加载MathJax的最新版本-->
-  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <!-- 编辑公式，使用：https://webdemo.myscript.com/views/math/index.html# -->
 </header>
 
