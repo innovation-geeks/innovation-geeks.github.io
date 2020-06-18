@@ -86,7 +86,7 @@ sns.distplot(feature_0, ax=ax)
 
 
 
-![png](2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_6_1.png)
+![png](/post/2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_6_1.png)
 
 
 ### 绘制直方图
@@ -109,7 +109,7 @@ sns.distplot(feature_0, ax=ax, kde=False)
 
 
 
-![png](2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_8_1.png)
+![png](/post/2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_8_1.png)
 
 
 ### 绘制核密度估计图
@@ -132,7 +132,7 @@ sns.distplot(feature_0, ax=ax, hist=False)
 
 
 
-![png](2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_10_1.png)
+![png](/post/2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_10_1.png)
 
 
 ### 绘制拟合参数分布图
@@ -155,7 +155,7 @@ sns.distplot(feature_0, ax=ax, kde=False, fit=stats.gamma)
 
 
 
-![png](2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_12_1.png)
+![png](/post/2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_12_1.png)
 
 
 ## 统计分布
@@ -241,7 +241,7 @@ fig = sm.qqplot(feature_0, line='s')
 ```
 
 
-![png](2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_22_0.png)
+![png](/post/2020-06-18-data-mining-distribution_files/2020-06-18-data-mining-distribution_22_0.png)
 
 
 从上图中，看到所有数据点都靠近 y=x，因此我们可以得出结论，它遵循正态分布。
