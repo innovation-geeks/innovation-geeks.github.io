@@ -68,7 +68,7 @@ $$
 \large {\Vert x \Vert}{2} = \lgroup {\sum_{i}{\vert x_i \vert}^2 }\rgroup ^{\frac{1}{2}}
 $$
 
-## L$\infty$ 范数
+## L∞ 范数
 
 当 𝑝−>∞ 时，我们称之为 𝐿∞范数，也被称为“maximum norm（max范数）”。也称为切比雪夫距离Chebyshev distance。这个范数表示向量中具有最大幅度的元素的绝对值：
 

@@ -4,9 +4,11 @@
 
 |主题|描述|
 |:- |:- |
-|architecture | 架构|
+|algorithm | 算法 |
+|architecture | 架构 |
 |c | C/C++ |
 |database | 数据库 |
+|data structure | 数据结构 |
 |life | 生活类目 |
 |linux | Linux |
 |java | Java |
