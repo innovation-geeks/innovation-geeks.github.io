@@ -15,7 +15,7 @@ import subprocess
 import shutil
 
 from utils.frontmatter_getter import get_yaml
-from ruamel.yaml import YAML
+from ruamel_yaml import YAML
 
 POSTS_PATH = "_posts"
 

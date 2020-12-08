@@ -14,7 +14,7 @@ import re
 import shutil
 import sys
 
-from ruamel.yaml import YAML
+from ruamel_yaml import YAML
 from utils.frontmatter_getter import get_yaml
 
 # tags and categories pattern
