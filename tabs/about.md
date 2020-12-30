@@ -5,11 +5,11 @@ title:
   en: About
 ---
 
-Total visits to this site: ![visits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Finnovation-geeks.github.io%2Fassets%2Fimg%2Fsample%2Fgithub.png)
+Total visits to this site:![visits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Finnovation-geeks.github.io%2Fassets%2Fimg%2Fsample%2Fgithub.png)
 
 
 An
-> Art Lover ｜ Perfectionist ｜ Explorers ｜ Programmer | Data Scientist
+> Art Lover ｜ Perfectionist ｜ Explorers ｜ Programmer ｜ Data Scientist
 
 who involved in
 > [github](https://github.com/zhouquan03)
